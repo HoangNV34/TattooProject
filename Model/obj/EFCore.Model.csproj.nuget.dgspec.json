@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\demo\\Model\\Model\\EFCore.Model.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\demo\\Model\\TattooProject\\Model\\EFCore.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\demo\\Model\\Model\\EFCore.Model.csproj": {
+    "C:\\Users\\Admin\\Desktop\\demo\\Model\\TattooProject\\Model\\EFCore.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\demo\\Model\\Model\\EFCore.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\demo\\Model\\TattooProject\\Model\\EFCore.Model.csproj",
         "projectName": "EFCore.Model",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\demo\\Model\\Model\\EFCore.Model.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\demo\\Model\\TattooProject\\Model\\EFCore.Model.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\demo\\Model\\Model\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\demo\\Model\\TattooProject\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

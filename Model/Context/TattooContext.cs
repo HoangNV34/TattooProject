@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Model.BussinessRules;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,7 @@ namespace Model.Context
 {
     public class TattooContext : DbContext
     {
-        public TattooContext() { }
-
+      
         // entity
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -22,7 +22,7 @@ namespace Model.Context
         //Config to connected database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"");
+            optionsBuilder.UseSqlServer(@"Data Source=localhost;Database=TattooProject;Integrated Security=True;");
         }
 
         // Config Model
@@ -55,7 +55,7 @@ namespace Model.Context
         }
         // data Default when instanse
 
-        
+
 
 
     }
